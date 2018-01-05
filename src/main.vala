@@ -9,7 +9,7 @@ int main(string[] args)
     window.set_default_size (350, 70);
     window.destroy.connect (Gtk.main_quit);
     
-    var label = new Gtk.Label ("Hello Again World!");
+    var label = new Gtk.Label (_("Hello Again World!"));
     window.add (label);
     window.show_all ();
 

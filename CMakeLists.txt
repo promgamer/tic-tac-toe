@@ -33,6 +33,11 @@ include(ValaVersion)
 # make sure it's the desired version of vala
 ensure_vala_version("0.16" MINIMUM)
 
+# Translation files
+set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}")
+add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
+add_subdirectory (po)
+
 # files we want to compile
 include(ValaPrecompile)
 vala_precompile(VALA_C ${EXEC_NAME}
