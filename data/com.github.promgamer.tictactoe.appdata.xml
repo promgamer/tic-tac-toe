@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>com.github.promgamer.tictactoe.desktop</id>
+  <metadata_license>CC0</metadata_license>
+  <name>Tic-Tac-Toe</name>
+  <summary>The simple yet fun game everyone can play!</summary>
+  <description>
+    <p>Play Tic-Tac-Toe on your elementaryOS.</p>
+  </description>
+</component>

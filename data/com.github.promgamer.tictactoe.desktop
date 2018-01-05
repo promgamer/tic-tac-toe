@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Tic-Tac-Toe
+GenericName=Tic-Tac-Toe Game
+Comment=Play Tic-Tac-Toe Game on elementaryOS
+Categories=Game;Education;
+Exec=com.github.promgamer.tictactoe
+Icon=application-default-icon
+Terminal=false
+Type=Application
+X-GNOME-Gettext-Domain=tic-tac-toe
+Keywords=Game;
