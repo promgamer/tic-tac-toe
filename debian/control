@@ -1,4 +1,4 @@
-Source: tic-tac-toe
+Source: com.github.promgamer.tic-tac-toe
 Section: x11
 Priority: extra
 Maintainer: Miguel Poeira <miguelfcunha@gmail.com>
@@ -9,7 +9,7 @@ Build-Depends: cmake (>= 2.8),
 
 Standards-Version: 3.9.3
 
-Package: tic-tac-toe
+Package: com.github.promgamer.tic-tac-toe
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Tic-tac-toe game
