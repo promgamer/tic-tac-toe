@@ -7,14 +7,12 @@ list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
 # where we install data directory (if we have any)
 set (DATADIR "${CMAKE_INSTALL_PREFIX}/share")
+set (GAMEDIR "${CMAKE_INSTALL_PREFIX}/games/com.github.promgamer.tictactoe")
 
 # what to call that directory where we install data too
 set (PKGDATADIR "${DATADIR}/com.github.promgamer.tictactoe")
 
 set (EXEC_NAME "com.github.promgamer.tictactoe")
-set (RELEASE_NAME "A hello world.")
-set (VERSION "0.1")
-set (VERSION_INFO "whats up world")
 
 # we're about to use pkgconfig to make sure dependencies are installed so let's find pkgconfig first
 find_package(PkgConfig)
@@ -59,3 +57,5 @@ install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.promgamer.tictactoe.d
 
 # install our .appdata.xml file so AppCenter will see it
 install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/com.github.promgamer.tictactoe.appdata.xml DESTINATION ${DATADIR}/metainfo/)
+
+install (FILES ${CMAKE_CURRENT_SOURCE_DIR}/data/board.glade DESTINATION ${GAMEDIR})
